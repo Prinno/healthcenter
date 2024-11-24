@@ -99,7 +99,7 @@ class EmailVerificationSerializer(serializers.ModelSerializer):
     def send_verification_email(self, user):
         token = email_verification_token.make_token(user)
         uid = urlsafe_base64_encode(force_bytes(user.pk))
-        verification_url = f"http://localhost:8000/users/verify-email/{uid}/{token}/"
+        verification_url = f"http://healthcentertz-397ff1fdc127.herokuapp.com/users/verify-email/{uid}/{token}/"
         
         send_mail(
             subject="Verify Your Email",
