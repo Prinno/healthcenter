@@ -33,7 +33,7 @@ ALLOWED_HOSTS = ['*','healthcentertz-397ff1fdc127.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
-    "jazzmin"
+    "jazzmin",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
