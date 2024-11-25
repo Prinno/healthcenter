@@ -2,6 +2,7 @@ from django.contrib import admin
 from .models import User,Medicine
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.contrib.auth.forms import UserCreationForm, UserChangeForm
+from django.utils.html import format_html
 
 class CustomUserCreationForm(UserCreationForm):
     class Meta:
