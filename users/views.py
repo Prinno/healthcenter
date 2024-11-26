@@ -61,7 +61,7 @@ class MedicineListView(APIView):
 
 
 class MedicineListAllView(APIView):
-    permission_classes = [IsAuthenticated]
+    permission_classes = [AllowAny]
 
     def get(self, request):
         medicines = Medicine.objects.all()  # Filter medicines as per your logic
